@@ -86,6 +86,7 @@ ns = np.arange(1, 11, 1)
 print char
 print ord(char)
 print letter[:8]
+print "C = {0}".format(c)
 
 plt.figure(1)
 plt.subplots_adjust(hspace=1)

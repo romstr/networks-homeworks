@@ -49,6 +49,7 @@ for station in [station_a, station_b, station_c, station_d]:
     print "Zero: {0}".format(zero(station))
     print
 
+print "Checking examples from the book:"
 print sum_stations({station_c: 1})
 print sum_stations({station_b: 1, station_c: 1})
 print sum_stations({station_a: 1, station_b: 0})
@@ -56,13 +57,17 @@ print sum_stations({station_a: 1, station_b: 0, station_c: 1})
 print sum_stations({station_a: 1, station_b: 1, station_c: 1, station_d: 1})
 print sum_stations({station_a: 1, station_b: 1, station_c: 0, station_d: 1})
 
-print find_bit(station_a, signal)
-print find_bit(station_b, signal)
-print find_bit(station_c, signal)
-print find_bit(station_d, signal)
+print
+print "Solution:"
+print "A -> {0}".format(find_bit(station_a, signal))
+print "B -> {0}".format(find_bit(station_b, signal))
+print "C -> {0}".format(find_bit(station_c, signal))
+print "D -> {0}".format(find_bit(station_d, signal))
 
-print signal
-print sum_stations({station_b: 0, station_c: 1, station_d: 1})
+print
+print "Check:"
+print "Original signal:\n\t{0}".format(signal)
+print "!B + C + D =\n\t{0}".format(sum_stations({station_b: 0, station_c: 1, station_d: 1}))
 
 
 
